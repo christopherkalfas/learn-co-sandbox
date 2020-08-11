@@ -1,21 +1,23 @@
+book_names= ["A Game of Thrones","A Clash of Kings", "A Storm of Swords", "A Feast for Crows", "A Dance with Dragons", "The Winds of Winter", "A Dream of Spring"]
 
+# def got_book_titles(book_names)
+#   book_number = 1
 
+#   book_names.each do | name |
+#     puts "A Song of Fire and Ice, Part #{book_number} : #{name}"
+#     book_number += 1
+#   end
+# end
 
-def add_prefix_to_title(titles)
-  "harry potter and the " + titles
-end
+#got_book_titles(book_names)
 
-def make_full_titles(titles)
-  full_titles = []
-  titles.each do  |title|
-    full_titles = add_prefix_to_title(titles)
-    full_titles.push(full_titles)
+def got_book_titles2(book_names)
+ index_position = book_names.array_length
+  
+  book_names.each do |namesss|
+    puts "A Song of Fire and Ice, Part: #{index_position} , #{namesss}"
+   
   end
-   full_titles
 end
 
-def print_titles(titles)
-  puts make_full_titles(titles)
-end
-books = ["ss", "cos", "Poa", "gof", "oop", "hbp", "dh"]
-print_titles(books)  
+got_book_titles2(book_names)
